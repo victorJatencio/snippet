@@ -1,0 +1,54 @@
+.image-element {
+	padding: 5px 20px 20px 20px;
+	margin: 15px 0;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #E6EBEC;
+}
+
+.snippet-container h6 {
+	display: inline-block;
+}
+
+.snippet-container button {
+	position: absolute;
+	margin: 5px;
+	right: 0;
+}
+
+.snippet-container {
+	background-color: #ddd;
+	margin-bottom: 200px;
+	border-radius: 3px;
+	position: relative;
+	margin: 20px 0;
+}
+.snippet-container h6 {
+	padding: 5px 0 5px 5px;
+}
+
+textarea.snippet {
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #E6EBEC;
+}
+textarea {
+	width: 100%;
+	min-height: 150px;
+	resize: none;
+	outline: none;
+}
+
+.image-element img {
+	padding: 15px 20px 10px 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.imgRight { float: right;}
+
+.imgLeft { float: left;}
+
+.imgVisible { display: none; }

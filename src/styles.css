@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	background-color: #f1f4f5;
+}
+
+textarea.snippet::-webkit-scrollbar {
+    width: 0.5em;
+}
+textarea.snippet::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+textarea.snippet::-webkit-scrollbar-thumb {
+  	background-color: rgba(0,0,0,0.5);
+  	outline: 1px solid #000;
+  	border-radius: 8px;
+}
+
+
+footer {
+	background-color: #2f353f;
+	padding: 10px 0;
+}
+footer h6 {
+	color: #c3c9ce;
+	text-align: center;
+}

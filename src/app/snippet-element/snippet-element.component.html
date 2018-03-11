@@ -1,0 +1,24 @@
+<div class="image-element">
+	<img [src]="elementTop.imagePath" alt="{{ elementTop.title }}" [ngClass]="imagePos">
+	<h4>{{ elementTop.title }}</h4>
+	<p #before>{{ elementTop.text }}</p>
+    
+    <span *ngIf="imgVisible;then imgShow">Loading...</span>
+    <ng-template #imgShow><img [src]="elementTop.imagePath" alt="{{ elementTop.title }}"></ng-template>
+
+	<div class="clear"></div>
+</div>
+<button class="btn btn-primary" (click)="onTop()">Top</button>
+<button class="btn btn-primary" (click)="onBottom()">Bottom</button>
+<button class="btn btn-primary" (click)="onRight()">Right</button>
+<button class="btn btn-primary" (click)="onLeft()">Left</button>
+
+<div class="snippet-container">
+	<h6>Snippet</h6>
+	<button type="button" class="btn btn-default" (click)="onCopy()" ngxClipboard [cbContent]="elementTop.code">copy <i class="fas fa-clipboard"></i></button>
+
+	<textarea class="snippet" disabled>
+	{{ elementTop.code }}
+	</textarea> 
+</div>
+
